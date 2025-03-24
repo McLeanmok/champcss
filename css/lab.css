@@ -1,0 +1,115 @@
+@import url(utils.css);
+body {
+    background-color: var(--body-color);
+}
+section {
+    padding-block: 5rem;
+}
+.colour >  .container {
+    display: grid;
+    gap: 3rem;
+}
+.swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 5fr));
+    gap: 1rem;
+}
+.swatch {
+    height: 5rem;
+    background-color: black;
+}
+.primary> .swatch:nth-child(1) { background-color: var(--primary-100);}
+.primary> .swatch:nth-child(2) { background-color: var(--primary-200);}
+.primary> .swatch:nth-child(3) { background-color: var(--primary-300);}
+.primary> .swatch:nth-child(4) { background-color: var(--primary-400);}
+.primary> .swatch:nth-child(5) { background-color: var(--primary-500);}
+.primary> .swatch:nth-child(6) { background-color: var(--primary-600);}
+.primary> .swatch:nth-child(7) { background-color: var(--primary-700);}
+.primary> .swatch:nth-child(8) { background-color: var(--primary-800);}
+.primary> .swatch:nth-child(9) { background-color: var(--primary-900);}
+
+.seccondary> .swatch:nth-child(1) { background-color: var(--seccondary-100);}
+.seccondary> .swatch:nth-child(2) { background-color: var(--seccondary-200);}
+.seccondary> .swatch:nth-child(3) { background-color: var(--seccondary-300);}
+.seccondary> .swatch:nth-child(4) { background-color: var(--seccondary-400);}
+.seccondary> .swatch:nth-child(5) { background-color: var(--seccondary-500);}
+.seccondary> .swatch:nth-child(6) { background-color: var(--seccondary-600);}
+.seccondary> .swatch:nth-child(7) { background-color: var(--seccondary-700);}
+.seccondary> .swatch:nth-child(8) { background-color: var(--seccondary-800);}
+.seccondary> .swatch:nth-child(9) { background-color: var(--seccondary-900);}
+
+.tertiary> .swatch:nth-child(1) { background-color: var(--tertiary-100);}
+.tertiary> .swatch:nth-child(2) { background-color: var(--tertiary-200);}
+.tertiary> .swatch:nth-child(3) { background-color: var(--tertiary-300);}
+.tertiary> .swatch:nth-child(4) { background-color: var(--tertiary-400);}
+.tertiary> .swatch:nth-child(5) { background-color: var(--tertiary-500);}
+.tertiary> .swatch:nth-child(6) { background-color: var(--tertiary-600);}
+.tertiary> .swatch:nth-child(7) { background-color: var(--tertiary-700);}
+.tertiary> .swatch:nth-child(8) { background-color: var(--tertiary-800);}
+.tertiary> .swatch:nth-child(9) { background-color: var(--tertiary-900);}
+
+.accent> .swatch:nth-child(1) { background-color: var(--surface-100);}
+.surface> .swatch:nth-child(2) { background-color: var(--surface-200);}
+.surface> .swatch:nth-child(3) { background-color: var(--surface-300);}
+.surface> .swatch:nth-child(4) { background-color: var(--surface-400);}
+.surface> .swatch:nth-child(5) { background-color: var(--surface-500);}
+.surface> .swatch:nth-child(6) { background-color: var(--surface-600);}
+.surface> .swatch:nth-child(7) { background-color: var(--surface-700);}
+.surface> .swatch:nth-child(8) { background-color: var(--surface-800);}
+.surface> .swatch:nth-child(9) { background-color: var(--surface-900);}
+
+.accent> .swatch:nth-child(1) { background-color: var(--accent-100);}
+.accent> .swatch:nth-child(2) { background-color: var(--accent-200);}
+.accent> .swatch:nth-child(3) { background-color: var(--accent-300);}
+.accent> .swatch:nth-child(4) { background-color: var(--accent-400);}
+.accent> .swatch:nth-child(5) { background-color: var(--accent-500);}
+.accent> .swatch:nth-child(6) { background-color: var(--accent-600);}
+.accent> .swatch:nth-child(7) { background-color: var(--accent-700);}
+.accent> .swatch:nth-child(8) { background-color: var(--accent-800);}
+.accent> .swatch:nth-child(9) { background-color: var(--accent-900);}
+
+.info> .swatch:nth-child(1) { background-color: var(--info-100);}
+.info> .swatch:nth-child(2) { background-color: var(--info-200);}
+.info> .swatch:nth-child(3) { background-color: var(--info-300);}
+.info> .swatch:nth-child(4) { background-color: var(--info-400);}
+.info> .swatch:nth-child(5) { background-color: var(--info-500);}
+.info> .swatch:nth-child(6) { background-color: var(--info-600);}
+.info> .swatch:nth-child(7) { background-color: var(--info-700);}
+.info> .swatch:nth-child(8) { background-color: var(--info-800);}
+.info> .swatch:nth-child(9) { background-color: var(--info-900);}
+
+.success> .swatch:nth-child(1) { background-color: var(--success-100);}
+.success> .swatch:nth-child(2) { background-color: var(--success-200);}
+.success> .swatch:nth-child(3) { background-color: var(--success-300);}
+.success> .swatch:nth-child(4) { background-color: var(--success-400);}
+.success> .swatch:nth-child(5) { background-color: var(--success-500);}
+.success> .swatch:nth-child(6) { background-color: var(--success-600);}
+.success> .swatch:nth-child(7) { background-color: var(--success-700);}
+.success> .swatch:nth-child(8) { background-color: var(--success-800);}
+.success> .swatch:nth-child(9) { background-color: var(--success-900);}
+
+.danger> .swatch:nth-child(1) { background-color: var(--danger-100);}
+.danger> .swatch:nth-child(2) { background-color: var(--danger-200);}
+.danger> .swatch:nth-child(3) { background-color: var(--danger-300);}
+.danger> .swatch:nth-child(4) { background-color: var(--danger-400);}
+.danger> .swatch:nth-child(5) { background-color: var(--danger-500);}
+.danger> .swatch:nth-child(6) { background-color: var(--danger-600);}
+.danger> .swatch:nth-child(7) { background-color: var(--danger-700);}
+.danger> .swatch:nth-child(8) { background-color: var(--danger-800);}
+.danger> .swatch:nth-child(9) { background-color: var(--danger-900);}
+
+.warning> .swatch:nth-child(1) { background-color: var(--warning-100);}
+.warning> .swatch:nth-child(2) { background-color: var(--warning-200);}
+.warning> .swatch:nth-child(3) { background-color: var(--warning-300);}
+.warning> .swatch:nth-child(4) { background-color: var(--warning-400);}
+.warning> .swatch:nth-child(5) { background-color: var(--warning-500);}
+.warning> .swatch:nth-child(6) { background-color: var(--warning-600);}
+.warning> .swatch:nth-child(7) { background-color: var(--warning-700);}
+.warning> .swatch:nth-child(8) { background-color: var(--warning-800);}
+.warning> .swatch:nth-child(9) { background-color: var(--warning-900);}
+
+/* Grids */
+.grids > .container {
+    display: grid;
+    gap: var(--sp-200);
+}
