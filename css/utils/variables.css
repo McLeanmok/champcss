@@ -2448,7 +2448,7 @@
 
     --seccondary-bg__ultra-dark: var(--seccondary-100);
     --seccondary-bg__dark: var(--seccondary-300);
-    --seccondary-bg__mid: var(--seccondary-540);
+    --seccondary-bg__mid: var(--seccondary-400);
     --seccondary-bg__light: var(--seccondary-800);
     --seccondary-bg__ultra-light: var(--seccondary-900);
 
