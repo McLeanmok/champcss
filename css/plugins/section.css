@@ -1,0 +1,37 @@
+/*
+    this is the section framework for ChampCSS. Since this actually looks at your HTML, it's it own plugin file, and not part of core.
+
+    Here's a quick overview of how it works.
+
+    To apply spacing for your sections, use the data-champ-section attribute. This accepts the following values:
+     - xs
+     -- sm
+     --md
+     -- lg
+     -- xl
+     -- hero - This is a special setting for your hero section. it takes the xl variable, and doubles it. This is useful for hero sections that are full screen, or full width.
+     -- template - this is for global templates. It takes the md setting, and divides it by 2. This is useful for templates that are used in multiple places, and need to be smaller than the default size.
+*/
+
+.section-xs {
+    padding-block: var(--section-padding-xs);
+}
+.section-sm {
+    padding-block: var(--section-padding-sm);
+}
+.section-md {
+    padding-block: var(--section-padding-md);
+}
+.section-lg {
+    padding-block: var(--section-padding-lg);
+}
+.section-xl {
+    padding-block: var(--section-padding-xl);
+}
+.section-hero {
+    padding-block: calc(var(--section-padding-xl) * 2);
+}
+.section-template {
+    padding-block: calc(var(--section-padding-md) / 2);
+    
+}
