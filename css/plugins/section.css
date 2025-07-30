@@ -3,7 +3,7 @@
 
     Here's a quick overview of how it works.
 
-    To apply spacing for your sections, use the data-champ-section attribute. This accepts the following values:
+    To apply spacing for your sections, any section spacing class prefixed with `.section-` will apply padding block to the section element. All the default plugins are in the `champ-section` layer, so that you can easily override them in the `custom-section` layer.
      - xs
      -- sm
      --md
@@ -13,6 +13,12 @@
      -- template - this is for global templates. It takes the md setting, and divides it by 2. This is useful for templates that are used in multiple places, and need to be smaller than the default size.
 */
 
+@layer champ-section, custom-section;
+
+@layer custom-section {
+    /* Add your custom section classes here */
+}
+@layer champ-section {
 .section-xs {
     padding-block: var(--section-padding-xs);
 }
@@ -32,6 +38,6 @@
     padding-block: calc(var(--section-padding-xl) * 2);
 }
 .section-template {
-    padding-block: calc(var(--section-padding-md) / 2);
-    
+    padding-block: calc(var(--section-padding-md) / 2);   
+}
 }

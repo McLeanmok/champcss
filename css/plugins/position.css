@@ -1,0 +1,136 @@
+/* 
+    ChampCSS Position Plugin
+    This plugin provides a set of utility classes for controlling the position of elements in a web page.
+    - Position classes: `.absolute`, `.relative`, `.fixed`, `.sticky`, `.static`: used to set the position property of an element.
+    - Sticky position classes: `.sticky-top`, `.sticky-bottom`, `.sticky-left`, `.sticky-right`, `.sticky-center`, etc.: used to create sticky elements that remain fixed in place while scrolling.
+    This plugin is useful for quickly applying positioning styles without needing to write custom CSS for each element. If you find that you are using certain position settings over again, it's better to build a custom class for it.
+    
+    As with all the ChampCSS plugins, the content is added into a cascade layer, so it's added with 0 specificity. You can easily override the content in this plug-in in the custom layer which takes precedence over all the default content.
+*/
+
+@layer champ-position, custom-position;
+@layer custom-position {
+  /* Add your custom position classes here or override the default ones */
+}
+
+@layer champ-position {
+  /* Position classes  */
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .static {
+    position: static;
+  }
+
+  /* Sticky position classes */
+  .sticky-top {
+    position: sticky;
+    top: 0;
+  }
+  .sticky-bottom {
+    position: sticky;
+    bottom: 0;
+  }
+  .sticky-left {
+    position: sticky;
+    left: 0;
+  }
+  .sticky-right {
+    position: sticky;
+    right: 0;
+  }
+  .sticky-center {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .sticky-center-top {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .sticky-center-bottom {
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .sticky-center-left {
+    position: sticky;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  .sticky-center-right {
+    position: sticky;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+  .sticky-top-left {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .sticky-top-right {
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+  .sticky-bottom-left {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+  .sticky-bottom-right {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+  }
+  .sticky-bottom-left {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+  .sticky-top-left {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .sticky-top-right {
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+  .sticky-bottom-left {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+  .sticky-bottom-right {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+  }
+  .sticky-bottom-left {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+  }
+  .sticky-top-left {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+}

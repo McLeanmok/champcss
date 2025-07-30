@@ -2456,6 +2456,11 @@
     --text-color: var(--black);
     --body-color: var(--white);
 
+
+    /* Backgrounds */
+    /* Standard background */
+    --bg-dark: var(--primary-100);
+    --bg-light: var(--primary-900);
     /* Background framework  */
     --primary-bg__ultra-dark: var(--primary-100);
     --primary-bg__dark: var(--primary-300);
@@ -2481,6 +2486,135 @@
     --surface-bg__light: var(--surface-700);
     --surface-bg__ultra-light: var(--surface-800);
 
+    /* Background overlays - used on real background images */
+    /* Primary */
+    --primary-bg-overlay__ultra-dark: var(--primary-100__trans-500); 
+    --primary-bg-overlay__dark: var(--primary-300__trans-500);
+    --primary-bg-overlay__mid: var(---primary-400__trans-500);
+    --primary-bg-overlay__light: var(--primary-700__trans-500);
+    --primary-bg-overlay__ultra-light: var(--primary-900__trans-500);
+
+    /* Secondary */
+    --secondary-bg-overlay__ultra-dark: var(--secondary-100__trans-500); 
+    --secondary-bg-overlay__dark: var(--secondary-300__trans-500);
+    --secondary-bg-overlay__mid: var(---secondary-400__trans-500);
+    --secondary-bg-overlay__light: var(--secondary-700__trans-500);
+    --secondary-bg-overlay__ultra-light: var(--secondary-900__trans-500);
+
+    /* Tertiary */
+    --tertiary-bg-overlay__ultra-dark: var(--tertiary-100__trans-500);
+    --tertiary-bg-overlay__dark: var(--tertiary-300__trans-500);
+    --tertiary-bg-overlay__mid: var(--tertiary-400__trans-500);
+    --tertiary-bg-overlay__light: var(--tertiary-700__trans-500);
+    --tertiary-bg-overlay__ultra-light: var(--tertiary-900__trans-500);
+    
+    /* Surface */
+    --surface-bg-overlay__ultra-dark: var(--surface-100__trans-500);
+    --surface-bg-overlay__dark: var(--surface-300__trans-500);
+   --surface-bg-overlay__mid: var(--surface-400__trans-500);
+    --surface-bg-overlay__light: var(--surface-700__trans-500);
+    --surface-bg-overlay__ultra-light: var(--surface-900__trans-500);
+
+    /* Background gradients - use on CSS background images */
+    /* Primary */
+    --primary-bg-gradient__ultra-dark: linear-gradient(var(--primary-100__trans-200), var(--primary-100__trans-200));
+    --primary-bg-gradient__dark: linear-gradient(var(--primary-300__trans-500), var(--primary-300__trans-500));
+    --primary-bg-gradient__mid: linear-gradient(var(--primary-400__trans-200), var(--primary-400__trans-200));
+    --primary-bg-gradient__light: linear-gradient(var(--primary-700__trans-200), var(--primary-700__trans-200));
+    --primary-bg-gradient__ultra-light: linear-gradient(var(--primary-800__trans-200), var(--primary-800__trans-200));
+
+    /* Secondary */
+    --secondary-bg-gradient__ultra-dark: linear-gradient(var(--secondary-100__trans-500), var(--secondary-100__trans-500));
+    --secondary-bg-gradient__dark: linear-gradient(var(--secondary-300__trans-500), var(--secondary-300__trans-500));
+    --secondary-bg-gradient__mid: linear-gradient(var(--secondary-400__trans-500), var(--secondary-400__trans-500));
+    --secondary-bg-gradient__light: linear-gradient(var(--secondary-700__trans-500), var(--secondary-700__trans-500));
+    --secondary-bg-gradient__ultra-light: linear-gradient(var(--secondary-800__trans-500), var(--secondary-800__trans-500));
+
+    /* Tertiary */
+    --tertiary-bg-gradient__ultra-dark: linear-gradient(var(--tertiary-100__trans-500), var(--tertiary-100__trans-500));
+    --tertiary-bg-gradient__dark: linear-gradient(var(--tertiary-300__trans-500), var(--tertiary-300__trans-500));
+    --tertiary-bg-gradient__mid: linear-gradient(var(--tertiary-400__trans-500), var(--tertiary-400__trans-500));
+    --tertiary-bg-gradient__light: linear-gradient(var(--tertiary-700__trans-500), var(--tertiary-700__trans-500));
+    --tertiary-bg-gradient__ultra-light: linear-gradient(var(--tertiary-800__trans-500), var(--tertiary-800__trans-500));
+
+    /* Surface */
+    --surface-bg-gradient__ultra-dark: linear-gradient(var(--surface-100__trans-500), var(--surface-100__trans-500));
+    --surface-bg-gradient__dark: linear-gradient(var(--surface-300__trans-500), var(--surface-300__trans-500));
+    --surface-bg-gradient__mid: linear-gradient(var(--surface-400__trans-500), var(--surface-400__trans-500));
+    --surface-bg-gradient__light: linear-gradient(var(--surface-700__trans-500), var(--surface-700__trans-500));
+    --surface-bg-gradient__ultra-light: linear-gradient(var(--surface-800__trans-500), var(--surface-800__trans-500));
+
+    /* Background patterns */
+    /* Split */
+    /* Base Styles */
+    --split__left-color: var(--black);
+    --split__left-percentage: 50%;
+    --split__right-color: var(--white);
+    --split__right-percentage: 50%;
+    
+    /* Primary  */
+    --primary-split__left-bg: var(--primary-bg__dark);
+    --primary-split__left-percentage: var(--split__left-percentage);
+  --primary-split__right-bg: var(--white);
+    --primary-split__right-percentage: var(--split__right-percentage);
+    --primary-split: linear-gradient(to right, var(--primary-split__left-bg) var(--primary-split__left-percentage), var(--primary-split__right-bg) var(--primary-split__right-percentage));
+
+    /* Secondary  */
+    --secondary-split__left-bg: var(--secondary-bg__dark);
+    --secondary-split__left-percentage: var(--split__left-percentage);
+    --secondary-split__right-bg: var(--white);
+    --secondary-split__right-percentage: var(--split__right-percentage);
+    --secondary-split: linear-gradient(to right, var(--secondary-split__left-bg) var(--secondary-split__left-percentage), var(--secondary-split__right-bg) var(--secondary-split__right-percentage));
+
+    /* Tertiary  */
+    --tertiary-split__left-bg: var(--tertiary-bg__dark);
+    --tertiary-split__left-percentage: var(--split__left-percentage);
+    --tertiary-split__right-bg: var(--white);
+    --tertiary-split__right-percentage: var(--split__right-percentage);
+    --tertiary-split: linear-gradient(to right, var(--tertiary-split__left-bg) var(--tertiary-split__left-percentage), var(--tertiary-split__right-bg) var(--tertiary-split__right-percentage));
+
+    /* Surface */
+    --surface-split__left-bg: var(--surface-bg__dark);
+    --surface-split__left-percentage: var(--split__left-percentage);
+    --surface-split__right-bg: var(--white);
+    --surface-split__right-percentage: var(--split__right-percentage);
+    --surface-split: linear-gradient(to right, var(--surface-split__left-bg) var(--surface-split__left-percentage), var(--surface-split__right-bg) var(--surface-split__right-percentage));
+
+    /* Overlap */
+    /* Base Styles */
+    --overlap__top-color: var(--black);
+    --overlap__top-percentage: 50%;
+    --overlap__bottom-color: var(--white);
+    --overlap__bottom-percentage: 50%;
+    --overlap: linear-gradient(to bottom, var(--overlap__top-color) var(--overlap__top-percentage), var(--overlap__bottom-color) var(--overlap__bottom-percentage));
+
+    /* Primary */
+    --primary-overlap__top-bg: var(--primary-bg__dark);
+    --primary-overlap__top-percentage: var(--overlap__top-percentage);
+    --primary-overlap__bottom-bg: var(--white);
+    --primary-overlap__bottom-percentage: var(--overlap__bottom-percentage);
+    --primary-overlap: linear-gradient(to bottom, var(--primary-overlap__top-bg) var(--primary-overlap__top-percentage), var(--primary-overlap__bottom-bg) var(--primary-overlap__bottom-percentage));
+
+    /* Secondary */
+    --secondary-overlap__top-bg: var(--secondary-bg__dark);
+    --secondary-overlap__top-percentage: var(--overlap__top-percentage);
+    --secondary-overlap__bottom-bg: var(--white);
+    --secondary-overlap__bottom-percentage: var(--overlap__bottom-percentage);
+    --secondary-overlap: linear-gradient(to bottom, var(--secondary-overlap__top-bg) var(--secondary-overlap__top-percentage), var(--secondary-overlap__bottom-bg) var(--secondary-overlap__bottom-percentage));
+
+    /* Tertiary */
+    --tertiary-overlap__top-bg: var(--tertiary-bg__dark);
+    --tertiary-overlap__top-percentage: var(--overlap__top-percentage);
+    --tertiary-overlap__bottom-bg: var(--white);
+    --tertiary-overlap__bottom-percentage: var(--overlap__bottom-percentage);
+    --tertiary-overlap: linear-gradient(to bottom, var(--tertiary-overlap__top-bg) var(--tertiary-overlap__top-percentage), var(--tertiary-overlap__bottom-bg) var(--tertiary-overlap__bottom-percentage));
+
+    /* Surface */
+    --surface-overlap__top-bg: var(--surface-bg__dark);
+    --surface-overlap__top-percentage: var(--overlap__top-percentage);
+    --surface-overlap__bottom-bg: var(--white);
+    --surface-overlap__bottom-percentage: var(--overlap__bottom-percentage);
+    --surface-overlap: linear-gradient(to bottom, var(--surface-overlap__top-bg) var(--surface-overlap__top-percentage), var(--surface-overlap__bottom-bg) var(--surface-overlap__bottom-percentage));
     /* =====
   TYPOGRAPHY
   =====*/
@@ -2495,6 +2629,12 @@
     --fs-links: clamp(1rem, 0.215vw + 1.306rem, 1.6rem);
     --fs-p: clamp(1rem, 0.299vw + 0.904rem, 1.3125rem);
 
+    /* Letter Spacing */
+    --ls-sm: 0.15rem;
+    --ls-md: 0.25rem;
+    --ls-lg: 0.48rem;
+    --ls-xl: 0.5rem;
+
     /* Line heights */
     --lh-p: clamp(1.3rem, 0.956vw + 0.694rem, 2rem);
     --lh-headinsgs: clamp(2rem, 1.912vw + 1.388rem, 4rem);
@@ -2504,15 +2644,15 @@
     --ff-headings: "Montserrat", sans-serif;
 
     /* Weights -- You will want to remove some of these utilities based on what font setup your project is using */
-    --fw-100: 100;
-    --fw-200: 200;
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-600: 600;
-    --fw-700: 700;
-    --fw-800: 800;
-    --fw-900: 900;
+    --fw-ultrathin: 100;
+    --fw-thin: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 600;
+    --fw-semibold: 700;
+    --fw-ultrabold: 800;
+    --fw-black: 900;
 
     /* =====
   SPACING AND LAYOUT
@@ -2549,12 +2689,13 @@
     --card-gap: var(--gap-md);
     --grid-gap: var(--gap-md);
     --content-gap: var(--gap-md);
+    --container-gap: var(--gap-md);
 
     /* Grid templates */
-    --grid-2: repeat(auto-fit, minmax(500px, 2fr));
-    --grid-3: repeat(auto-fit, minmax(333px, 3fr));
-    --grid-4: repeat(auto-fit, minmax(250px, 4fr));
-    --grid-5: repeat(auto-fit, minmax(200px, 5fr));
+    --grid-2: repeat(auto-fit, minmax(min(500px, 100%), 2fr));
+    --grid-3: repeat(auto-fit, minmax(min(333px, 100%), 3fr));
+    --grid-4: repeat(auto-fit, minmax(min(250px, 100%), 4fr));
+    --grid-5: repeat(auto-fit, minmax(min(200px, 100%), 5fr));
 
     /* Border Radius  */
     --site-radius: var(--radius-md);
@@ -2570,6 +2711,10 @@
     --width-500: 50%;
     --width-700: 75%;
 
+    /* Site Widths */
+    --wide-site-width: 90em;
+    --standard-site-width: 72em;
+    --narrow-site-width: 55rem;
     /* ===
     SITE SETTINGS
     ===*/
@@ -2642,42 +2787,42 @@
     --tertiary-btn__hover-border-radius: var(--btn-hover-radius);
 
     /* Cards */
-    --card-padding__block: var(--sp-150);
-    --card-padding__inline: var(--sp-250);
-    --card-padding: var(--card-padding__inline) var(--card-padding__block);
+    --card__padding-block: var(--sp-150);
+    --card__padding-inline: var(--sp-250);
+    --card__padding: var(--card__padding-inline) var(--card__padding-block);
     --card-radius: var(--radius-md);
-    --primary-card__padding: var(--card-padding);
+    --primary-card__padding: var(--card__padding);
     --card-radius: var(--radius-md);
-    --card-gap: var(--gap-md);
-    --card-heading__font-size: var(--fs-h4);
+    --card__gap: var(--gap-md);
+    --card__heading-font-size: var(--fs-h4);
     --card-body-font-size: var(--fs-p);
 
-    /* Primary Card styles */
-    --primary-card__bg: var(--primary-bg__mid);
+   /* Primary Card styles */
+   --primary-card__bg: var(--primary-bg__mid);
     --primary-card__color: var(--white);
-    --primary-card__heading-font-size: var(--card-heading__font-size);
-    --primary-card__body-font-size: var(--card-body-font-size);
-    --primary-card__padding: var(--card-padding);
+    --primary-card__heading-font-size: var(--card__heading-font-size);
+    --primary-card__body-font-size: var(--card__body-font-size);
+    --primary-card__padding: var(--card__padding);
     --primary-card__radius: var(--card-radius);
-    --primary-card__gap: var(--card-gap);
+    --primary-card__gap: var(--card__gap);
 
     /* Seccondary Card styles */
     --secondary-card__bg: var(--secondary-bg__mid);
     --secondary-card__color: var(--white);
-    --secondary-card__heading-font-size: var(--card-heading__font-size);
-    --secondary-card__body-font-size: var(--card-body-font-size);
-    --secondary-card__padding: var(--card-padding);
+    --secondary-card__heading-font-size: var(--card__heading-font-size);
+    --secondary-card__body-font-size: var(--card__body-font-size);
+    --secondary-card__padding: var(--card__padding);
     --secondary-card__radius: var(--card-radius);
-    --secondary-card__gap: var(--card-gap);
+    --secondary-card__gap: var(--card__gap);
 
     /* Tertiary Card styles */
     --tertiary-card__bg: var(--tertiary-bg__mid);
     --tertiary-card__color: var(--white);
-    --tertiary-card__heading-font-size: var(--card-heading__font-size);
-    --tertiary-card__body-font-size: var(--card-body-font-size);
-    --tertiary-card__padding: var(--card-padding);
+    --tertiary-card__heading-font-size: var(--card__heading-font-size);
+    --tertiary-card__body-font-size: var(--card__body-font-size);
+    --tertiary-card__padding: var(--card__padding);
     --tertiary-card__radius: var(--card-radius);
-    --tertiary-card__gap: var(--card-gap);
+    --tertiary-card__gap: var(--card__gap);
 
     /* Forms */
     /* Base variables */
@@ -2735,4 +2880,46 @@
       var(--tertiary-input__focus-ring-style);
     --tertiary-input__transition: var(--input-transition);
 
+    /* Pills and tags */
+    /* Base Variables */
+      --pill__bg: var(--white);
+   --pill__color: var(--black);
+   --pill__font-weight: var(--fw-700);
+   --pill__letter-spacing: var(--ls-sm);
+   --pill__padding-block: var(--sp-50);
+   --pill__padding-inline: var(--sp-100);
+   --pill__padding: var(--pill__padding-block) var(--pill__padding-inline);
+   --pill__radius: var(--radius-sm);
+
+    /* Primary Pill Styles */
+    --primary-pill__bg: var(--primary-900);
+    --primary-pill__color: var(--primary-400);
+    --primary-pill__font-weight: var(--fw-700);
+    --primary-pill__letter-spacing: var(--ls-sm);
+    --primary-pill__padding-block: var(--sp-50);
+    --primary-pill__padding-inline: var(--sp-100);
+    --primary-pill__padding: var(--primary-pill__padding-block) var(--primary-pill__padding-inline);
+    --primary-pill__radius: var(--radius-sm);
+
+    /* Secondary Pill Styles */
+    --secondary-pill__bg: var(--secondary-900);
+    --secondary-pill__color: var(--secondary-400);
+    --secondary-pill__font-weight: var(--fw-700);
+    --secondary-pill__letter-spacing: var(--ls-sm);
+    --secondary-pill__padding-block: var(--sp-50);
+    --secondary-pill__padding-inline: var(--sp-100);
+    --secondary-pill__padding: var(--secondary-pill__padding-block) var(--secondary-pill__padding-inline);
+    --secondary-pill__radius: var(--radius-sm);
+
+    /* Tertiary Pill Styles */
+    --tertiary-pill__bg: var(--tertiary-900);
+    --tertiary-pill__color: var(--tertiary-400);
+    --tertiary-pill__font-weight: var(--fw-700);
+    --tertiary-pill__letter-spacing: var(--ls-sm);
+    --tertiary-pill__padding-block: var(--sp-50);
+    --tertiary-pill__padding-inline: var(--sp-100);
+    --tertiary-pill__padding: var(--tertiary-pill__padding-block) var(--tertiary-pill__padding-inline);
+    --tertiary-pill__radius: var(--radius-sm);
+
+    
   }
