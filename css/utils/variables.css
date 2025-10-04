@@ -2791,9 +2791,7 @@
     --card__padding-inline: var(--sp-250);
     --card__padding: var(--card__padding-inline) var(--card__padding-block);
     --card-radius: var(--radius-md);
-    --primary-card__padding: var(--card__padding);
-    --card-radius: var(--radius-md);
-    --card__gap: var(--gap-md);
+    --card__gap: calc(var(--gap-md) / 2);
     --card__heading-font-size: var(--fs-h4);
     --card-body-font-size: var(--fs-p);
 

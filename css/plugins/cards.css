@@ -77,6 +77,21 @@
     padding: var(--tertiary-card__padding);
     border-radius: var(--tertiary-card__radius);
   }
+
+  /* Automatic Card Styling */
+  [class$="-card"] {
+    padding: var(--card-padding);
+    display: grid;
+    gap: var(--card-gap);
+    border-radius: var(--card-radius);
+  }
+  [class$="-card__heading"] {
+    font-size: var(--card__heading-font-size);
+  }
+  [class$="-card__body"] {
+    font-size: var(--card__body-font-size);
+    margin: auto 0;
+  }
 }
 
 /* Modifier Classes */
