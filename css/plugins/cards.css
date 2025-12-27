@@ -22,7 +22,7 @@
 */
 
 /* Initiating layers */
-@layer champ-cards, card-mods, custom-cards;
+@layer champ-cards, card-extras, custom-cards;
 
 @layer custom-cards {
   /* Custom card classes, or overrides go here */
@@ -95,36 +95,8 @@
 }
 
 /* Modifier Classes */
-@layer card-mods {
-  /* Size Modifiers */
-  .card-size--sm:not(.standard-card__btn) {
-    --card-padding__inline: calc(var(--sp-250) / 1.4);
-    --card-padding__block: calc(var(--sp-150) / 1.5);
-    --card-padding: var(--card-padding__block) var(--card-padding__inline);
+@layer card-extras {
 
-    padding: var(--card-padding);
-  }
-  .card-size--lg:not(.standard-card__btn) {
-    --card-padding__inline: calc(var(--sp-250) * 2.5);
-    --card-padding__block: calc(var(--sp-150) * 2);
-    --card-padding: var(--card-padding__block) var(--card-padding__inline);
-
-    padding: var(--card-padding);
-  }
-
-  /* Card Radius Modifiers */
-  .card-radius--sm:not(.standard-card__btn) {
-    --card-radius: var(--radius__sm);
-  }
-  .card-radius--md:not(.standard-card__btn) {
-    --card-radius: var(--radius__md);
-  }
-  .card-radius--lg:not(.standard-card__btn) {
-    --card-radius: var(--radius__lg);
-  }
-  .card-block:not(.standard-card__cta) {
-    border-radius: 0;
-  }
 
   /* Accent Headline class */
   .standard-card__lead {

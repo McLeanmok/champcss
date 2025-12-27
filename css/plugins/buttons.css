@@ -4,124 +4,123 @@
 
     Here's a brief overview of how this plugin works:
     - The `.standard-btn` class is the base class for all buttons. It includes the default styles for buttons.
-    - The `.btn__secondary` class is a variant of the `.standard-btn` class. It includes the styles for secondary buttons.The same qoes for the `.btn__tertiary` and `.btn__neutral` classes.
-    - The `.btn-outline__primary`, `.btn-outline__secondary`, `.btn-outline__tertiary`, and `.btn-outline__neutral` classes are used to create outlined buttons. They include the styles for outlined buttons.
-    - The `.btn-radius__block`, `.btn-radius__pill`, `.btn-size__sm`, and `.btn-size__lg` classes are utility classes that can be used to change the border radius and size of buttons.
+    - The `.btn-secondary` class is a variant of the `.standard-btn` class. It includes the styles for secondary buttons.The same qoes for the `.btn-tertiary` and `.btn-neutral` classes.
+    - The `.btn-outline-primary`, `.btn-outline-secondary`, `.btn-outline-tertiary`, and `.btn-outline-neutral` classes are used to create outlined buttons. They include the styles for outlined buttons.
+    - The `.btn-radius-block`, `.btn-radius-pill`, `.btn-size-sm`, and `.btn-size-lg` classes are utility classes that can be used to change the border radius and size of buttons.
 
 */
 /* Initiating layers */
 @layer champ-btns, custom-btns;
 @layer custom-btns {
-    /* Custom button classes, or overrides go here */
+  /* Custom button classes, or overrides go here */
 }
 
 @layer chapmp-btns {
-    .standard-btn {
-        background-color: var(--primary-btn__bg);
-        color: var(--primary-btn__color);
-        padding: var(--primary-btn__padding);
-        font-weight: var(--primary-btn__font-weight);
-        border-radius: var(--primary-btn__radius);
-        transition: var(--primary-btn__animation);
-    
-        &:hover, &:focus {
-            background-color: var(--primary-btn__hover-bg);
-        }
+  .standard-btn {
+    background-color: var(--primary-btn-bg);
+    color: var(--primary-btn-color);
+    padding: var(--primary-btn-padding);
+    font-weight: var(--primary-btn-font-weight);
+    border-radius: var(--primary-btn-radius);
+    transition: var(--primary-btn-animation);
+
+    &:hover,
+    &:focus {
+      background-color: var(--primary-btn-hover-bg);
     }
-    
-    /* variants */
-    .btn__secondary {
-        background-color: var(--secondary-btn__bg);
-        color: var(--secondary-btn__color);
-        font-weight: var(--secondary-btn__font-weight);
-    
-        &:hover, &:focus {
-            background-color: var(--secondary-btn__hover-bg);
-        }
+  }
+
+  /* variants */
+  .btn-secondary {
+    background-color: var(--secondary-btn-bg);
+    color: var(--secondary-btn-color);
+    font-weight: var(--secondary-btn-font-weight);
+
+    &:hover,
+    &:focus {
+      background-color: var(--secondary-btn-hover-bg);
     }
-    
-    .btn__tertiary {
-        background-color: var(--tertiary-btn__bg);
-        color: var(--tertiary-btn__color);
-        font-weight: var(--tertiary-btn__font-weight);
-        border-radius: var(--tertiary-btn__radius);
-    
-        &:hover, &:focus {
-            background-color: var(--tertiary-btn__hover-bg);
-        }
+  }
+
+  .btn-tertiary {
+    background-color: var(--tertiary-btn-bg);
+    color: var(--tertiary-btn-color);
+    font-weight: var(--tertiary-btn-font-weight);
+    border-radius: var(--tertiary-btn-radius);
+
+    &:hover,
+    &:focus {
+      background-color: var(--tertiary-btn-hover-bg);
     }
-    
-    .btn__neutral { 
-        background-color: var(--surface-200);
-        color: var(--white);
-    
-        &:hover, &:focus {
-            background-color: var(--surface-300);
-        }
+  }
+
+  .btn-neutral {
+    background-color: var(--surface-200);
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--surface-300);
     }
-    
-    /* Outlines */
-    .btn-outline__primary {
-        --btn-theme: var(--primary-400);
-        border: 3px solid var(--btn-theme);
-        background-color: transparent;
-        color: var(--btn-theme);
-    
-        &:hover, &:focus {
-            background-color: var(--btn-theme);
-            color: var(--white); 
-        }
-    }
-    
-    .btn-outline__secondary {
-        --btn-theme: var(--secondary-400);
-        border: 3px solid var(--btn-theme);
-        background-color: transparent;
-        color: var(--btn-theme);
-    
-        &:hover, &:focus {
-            background-color: var(--btn-theme);
-            color: var(--white); 
-        }
-    }
-    
-    .btn-outline__tertiary {
-        --btn-theme: var(--tertiary-400);
-        border: 3px solid var(--btn-theme);
-        background-color: transparent;
-        color: var(--btn-theme);
-    
-        &:hover, &:focus {
-            background-color: var(--btn-theme);
-            color: var(--white); 
-        }
-    }
-    
-    .btn-outline__neutral {
-        --btn-theme: var(--surface-200);
-        border: 3px solid var(--btn-theme);
-        background-color: transparent;
-        color: var(--btn-theme);
-    
-        &:hover, &:focus {
+  }
+
+  /* Outlines */
+  .btn-outline-primary {
+    --btn-theme: var(--primary-400);
+    border: 3px solid var(--btn-theme);
+    background-color: transparent;
+    color: var(--btn-theme);
+
+    &:hover,
+    &:focus {
       background-color: var(--btn-theme);
-            color: var(--white); 
-        }
+      color: var(--white);
     }
-    
-    /* Utility classes  */
-    .btn-radius__block {
-        border-radius: 0;
+  }
+
+  .btn-outline-secondary {
+    --btn-theme: var(--secondary-400);
+    border: 3px solid var(--btn-theme);
+    background-color: transparent;
+    color: var(--btn-theme);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-theme);
+      color: var(--white);
     }
-    
-    .btn-radius__pill {
-        border-radius: var(--radius-xl);
+  }
+
+  .btn-outline-tertiary {
+    --btn-theme: var(--tertiary-400);
+    border: 3px solid var(--btn-theme);
+    background-color: transparent;
+    color: var(--btn-theme);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-theme);
+      color: var(--white);
     }
-    
-    .btn-size__sm {
-        padding: calc(var(--btn-padding__block) / 3);
+  }
+
+  .btn-outline-neutral {
+    --btn-theme: var(--surface-200);
+    border: 3px solid var(--btn-theme);
+    background-color: transparent;
+    color: var(--btn-theme);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-theme);
+      color: var(--white);
     }
-    .btn-size__lg {
-        padding: calc(var(--btn-padding__block) * 1);
-    }
+  }
+  /* Automatic button styling  */
+  [class$="-btn"] {
+    padding: var(--btn-padding);
+    font-weight: var(--btn-font-weight);
+    border-radius: var(--btn-radius);
+    transition: var(--btn-animation);
+  }
 }
