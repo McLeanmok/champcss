@@ -381,7 +381,7 @@
   --btn-hover-radius: var(--radius-lg);
 
   /* Primary Button Styles */
-  --primary-btn-bg: var(--primary-bg-mid);
+  --primary-btn-bg: var(--primary-mid);
   --primary-btn-color: var(--white);
   --primary-btn-font-weight: var(--btn-font-weight);
   --primary-btn-padding: var(--btn-padding);
@@ -392,7 +392,7 @@
   --primary-btn-hover-border-radius: var(--btn-hover-radius);
 
   /* Seccondary Button Styles */
-  --secondary-btn-bg: var(--secondary-bg-mid);
+  --secondary-btn-bg: var(--secondary-mid);
   --secondary-btn-color: var(--white);
   --secondary-btn-font-weight: var(--btn-font-weight);
   --secondary-button-padding: var(--btn-padding);
@@ -403,7 +403,7 @@
   --secondary-btn-hover-border-radius: var(--btn-hover-radius);
 
   /* Tertiary Button Styles */
-  --tertiary-btn-bg: var(--tertiary-bg-mid);
+  --tertiary-btn-bg: var(--tertiary-mid);
   --tertiary-btn-color: var(--white);
   --tertiary-btn-font-weight: var(--btn-font-weight);
   --tertiary-button-padding: var(--btn-padding);
@@ -423,7 +423,7 @@
   --card-body-font-size: var(--fs-p);
 
   /* Primary Card styles */
-  --primary-card-bg: var(--primary-bg-mid);
+  --primary-card-bg: var(--primary-mid);
   --primary-card-color: var(--white);
   --primary-card-heading-font-size: var(--card-heading-font-size);
   --primary-card-body-font-size: var(--card-body-font-size);
@@ -432,7 +432,7 @@
   --primary-card-gap: var(--card-gap);
 
   /* Seccondary Card styles */
-  --secondary-card-bg: var(--secondary-bg-mid);
+  --secondary-card-bg: var(--secondary-mid);
   --secondary-card-color: var(--white);
   --secondary-card-heading-font-size: var(--card-heading-font-size);
   --secondary-card-body-font-size: var(--card-body-font-size);
@@ -441,7 +441,7 @@
   --secondary-card-gap: var(--card-gap);
 
   /* Tertiary Card styles */
-  --tertiary-card-bg: var(--tertiary-bg-mid);
+  --tertiary-card-bg: var(--tertiary-mid);
   --tertiary-card-color: var(--white);
   --tertiary-card-heading-font-size: var(--card-heading-font-size);
   --tertiary-card-body-font-size: var(--card-body-font-size);
