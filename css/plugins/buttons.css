@@ -55,18 +55,26 @@
   }
 
   .btn-neutral {
-    background-color: var(--surface-200);
+    background-color: var(--surface-dark);
     color: var(--white);
 
     &:hover,
     &:focus {
-      background-color: var(--surface-300);
+      background-color: var(--surface-mid);
     }
   }
+.btn-neutral-light {
+  background-color: var(--white);
+  color: var(--surface-dark);
 
+  &:hover,
+  &:focus {
+    background-color: var(--surface-light);
+  }
+}
   /* Outlines */
   .btn-outline-primary {
-    --btn-theme: var(--primary-400);
+    --btn-theme: var(--primary-mid);
     border: 3px solid var(--btn-theme);
     background-color: transparent;
     color: var(--btn-theme);
@@ -79,7 +87,7 @@
   }
 
   .btn-outline-secondary {
-    --btn-theme: var(--secondary-400);
+    --btn-theme: var(--secondary-mid);
     border: 3px solid var(--btn-theme);
     background-color: transparent;
     color: var(--btn-theme);
@@ -92,7 +100,7 @@
   }
 
   .btn-outline-tertiary {
-    --btn-theme: var(--tertiary-400);
+    --btn-theme: var(--tertiary-mid);
     border: 3px solid var(--btn-theme);
     background-color: transparent;
     color: var(--btn-theme);
@@ -105,7 +113,7 @@
   }
 
   .btn-outline-neutral {
-    --btn-theme: var(--surface-200);
+    --btn-theme: var(--surface-dark);
     border: 3px solid var(--btn-theme);
     background-color: transparent;
     color: var(--btn-theme);
@@ -114,6 +122,18 @@
     &:focus {
       background-color: var(--btn-theme);
       color: var(--white);
+    }
+  }
+  .btn-neutral-light-outline {
+    --btn-theme: var(--white);
+    border: 3px solid var(--btn-theme);
+    background-color: transparent;
+    color: var(--btn-theme);
+
+    &:hover,
+    &:focus {
+      background-color: var(--btn-theme);
+      color: var(--black);
     }
   }
   /* Automatic button styling  */
