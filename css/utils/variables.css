@@ -305,11 +305,12 @@
   --grid-5: repeat(auto-fit, minmax(min(200px, 100%), 5fr));
 
   /* Static Templates */
-  --grid-1: repeat(0, minmax(100%, 1fr));
-  --grid-2-static: repeat(min(2, 100%), minmax(100%, 1fr));
-  --grid-3-static: repeat(min(3, 100%), minmax(100%, 1fr));
-  --grid-4-static: repeat(min(4, 100%), minmax(100%, 1fr));
-  --grid-5-static: repeat(min(5, 100%), minmax(100%, 1fr));
+  /* Static Templates */
+  --grid-1: repeat(1, minmax(0, 1fr));
+  --grid-2-static: repeat(2, minmax(0, 1fr));
+  --grid-3-static: repeat(3, minmax(0, 1fr));
+  --grid-4-static: repeat(4, minmax(0, 1fr));
+  --grid-5-static: repeat(5, minmax(0, 1fr));
 
   /* Border Radius  */
   --radius: var(--radius-md);
@@ -341,8 +342,8 @@
   --site-text-width: var(--text-width-lg);
 
   /* site focus style */
-  --site-focus-style: var(--site-focus-color), var(--site-focus-thickness),
-    var(--site-focus-line);
+  --site-focus-style:
+    var(--site-focus-color), var(--site-focus-thickness), var(--site-focus-line);
   --site-focus-thickness: 0.3125rem;
   --site-focus-line: solid;
   --site-focus-color: var(--primary-500);
@@ -363,8 +364,8 @@
   --site-transition: all var(--site-transition-duration)
     var(--site-transition-timing-function);
 
-    /* Gutter */
-    --gutter: 1rem;
+  /* Gutter */
+  --gutter: 1rem;
   /*===
     COMPONENT FRAMEWORK 
     ===*/
@@ -377,7 +378,10 @@
   --btn-padding: var(--btn-padding-inline) var(--btn-padding-block);
   --btn-radius: var(--radius);
   --btn-font-weight: var(--fw-bold);
-  --btn-animation: background-color var(--site-transition-duration) var(--site-transition-timing-function), color var(--site-transition-duration) var(--site-transition-timing-function);
+  --btn-animation:
+    background-color var(--site-transition-duration)
+      var(--site-transition-timing-function),
+    color var(--site-transition-duration) var(--site-transition-timing-function);
   --btn-hover-radius: var(--radius-lg);
 
   /* Primary Button Styles */
@@ -469,7 +473,8 @@
   --primary-input-focus-ring-color: var(--primary-500);
   --primary-input-focus-ring-thickness: var(--site-focus-thickness);
   --primary-input-focus-ring-style: var(--site-focus-line);
-  --primary-input-focus-ring: var(--primary-input-focus-ring-color),
+  --primary-input-focus-ring:
+    var(--primary-input-focus-ring-color),
     var(--primary-input-focus-ring-thickness),
     var(--primary-input-focus-ring-style);
   --primary-input-radius-focus: var(--input-radius-focus);
@@ -485,7 +490,8 @@
   --secondary-input-focus-ring-color: var(--secondary-500);
   --secondary-input-focus-ring-thickness: var(--site-focus-thickness);
   --secondary-input-focus-ring-style: var(--site-focus-line);
-  --secondary-input-focus-ring: var(--secondary-input-focus-ring-color),
+  --secondary-input-focus-ring:
+    var(--secondary-input-focus-ring-color),
     var(--secondary-input-focus-ring-thickness),
     var(--secondary-input-focus-ring-style);
   --secondary-input-transition: var(--input-transition);
@@ -500,7 +506,8 @@
   --tertiary-input-focus-ring-color: var(--tertiary-500);
   --tertiary-input-focus-ring-thickness: var(--site-focus-thickness);
   --tertiary-input-focus-ring-style: var(--site-focus-line);
-  --tertiary-input-focus-ring: var(--tertiary-input-focus-ring-color),
+  --tertiary-input-focus-ring:
+    var(--tertiary-input-focus-ring-color),
     var(--tertiary-input-focus-ring-thickness),
     var(--tertiary-input-focus-ring-style);
   --tertiary-input-transition: var(--input-transition);
