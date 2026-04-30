@@ -369,8 +369,7 @@
   /*===
     COMPONENT FRAMEWORK 
     ===*/
-
-  /* Buttons */
+/* Buttons */
 
   /* Base button variables */
   --btn-padding-inline: var(--sp-100);
@@ -385,7 +384,7 @@
   --btn-hover-radius: var(--radius-lg);
 
   /* Primary Button Styles */
-  --primary-btn-bg: var(--primary-mid);
+  --primary-btn-bg: var(--primary);
   --primary-btn-color: var(--white);
   --primary-btn-font-weight: var(--btn-font-weight);
   --primary-btn-padding: var(--btn-padding);
@@ -396,7 +395,7 @@
   --primary-btn-hover-border-radius: var(--btn-hover-radius);
 
   /* Seccondary Button Styles */
-  --secondary-btn-bg: var(--secondary-mid);
+  --secondary-btn-bg: var(--secondary);
   --secondary-btn-color: var(--white);
   --secondary-btn-font-weight: var(--btn-font-weight);
   --secondary-button-padding: var(--btn-padding);
@@ -407,7 +406,7 @@
   --secondary-btn-hover-border-radius: var(--btn-hover-radius);
 
   /* Tertiary Button Styles */
-  --tertiary-btn-bg: var(--tertiary-mid);
+  --tertiary-btn-bg: var(--tertiary);
   --tertiary-btn-color: var(--white);
   --tertiary-btn-font-weight: var(--btn-font-weight);
   --tertiary-button-padding: var(--btn-padding);
@@ -416,7 +415,6 @@
   --tertiary-btn-hover-bg: var(--tertiary-dark);
   --tertiary-btn-hover-color: var(--white);
   --tertiary-btn-hover-border-radius: var(--btn-hover-radius);
-
   /* Cards */
   --card-padding-block: var(--sp-150);
   --card-padding-inline: var(--sp-250);
