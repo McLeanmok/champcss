@@ -5,9 +5,9 @@
 
     here is how it works:
     - add a class of " standard card" to the containing block, and add the following classes to the child elements:
-    - .standard-card__heading - for the card title
-    - .standard-card__body - for the card paragraph text
-    - .standard-card__cta - for the card call to action button
+    - .standard-card-heading - for the card title
+    - .standard-card-body - for the card paragraph text
+    - .standard-card-cta - for the card call to action button
 
     There are also additional modifier classes available for customization:
     - .standard-card--secondary - for a secondary card style
@@ -18,7 +18,7 @@
     - .card-radius--block - for no card radius
     - .card-radius--lg - for a large card radius
     
-    - .standard-card__lead - for a lead element, which is styled to be uppercase and bold. This is completely optional.
+    - .standard-card-lead - for a lead element, which is styled to be uppercase and bold. This is completely optional.
 */
 
 /* Initiating layers */
@@ -32,17 +32,17 @@
   /* Standard Card */
   .standard-card {
     display: grid;
-    gap: var(--card__gap);
-    background-color: var(--primary-card__bg);
-    color: var(--primary-card__color);
-    padding: var(--primary-card__padding);
-    border-radius: var(--primary-card__radius);
+    gap: var(--card-gap);
+    background-color: var(--primary-card-bg);
+    color: var(--primary-card-color);
+    padding: var(--primary-card-padding);
+    border-radius: var(--primary-card-radius);
   }
   .standard-card__heading {
     font-size: var(--card__heading-font-size);
   }
-  .standard-card__body {
-    font-size: var(--card__body-font-size);
+  .standard-card-body {
+    font-size: var(--card-body-font-size);
     margin: auto 0;
   }
   .standard-card__btn {
@@ -55,7 +55,7 @@
 
     &:hover,
     &:focus {
-      background-color: var(--primary-900__trans-900);
+      background-color: var(--primary-light);
       transition: var(--btn-animation);
     }
   }
@@ -63,19 +63,19 @@
   /* Variants */
   .standard-card--secondary {
     display: grid;
-    gap: var(--card__gap);
-    background-color: var(--secondary-card__bg);
-    color: var(--secondary-card__color);
-    padding: var(--secondary-card__padding);
-    border-radius: var(--secondary-card__radius);
+    gap: var(--card-gap);
+    background-color: var(--secondary-card-bg);
+    color: var(--secondary-card-color);
+    padding: var(--secondary-card-padding);
+    border-radius: var(--secondary-card-radius);
   }
   .standard-card--tertiary {
     display: grid;
-    gap: var(--card__gap);
-    background-color: var(--tertiary-card__bg);
-    color: var(--tertiary-card__color);
-    padding: var(--tertiary-card__padding);
-    border-radius: var(--tertiary-card__radius);
+    gap: var(--card-gap);
+    background-color: var(--tertiary-card-bg);
+    color: var(--tertiary-card-color);
+    padding: var(--tertiary-card-padding);
+    border-radius: var(--tertiary-card-radius);
   }
 
   /* Automatic Card Styling */
@@ -86,18 +86,16 @@
     border-radius: var(--card-radius);
   }
   [class$="-card__heading"] {
-    font-size: var(--card__heading-font-size);
+    font-size: var(--card-heading-font-size);
   }
   [class$="-card__body"] {
-    font-size: var(--card__body-font-size);
+    font-size: var(--card-body-font-size);
     margin: auto 0;
   }
 }
 
 /* Modifier Classes */
 @layer card-extras {
-
-
   /* Accent Headline class */
   .standard-card__lead {
     order: -1;
@@ -111,12 +109,12 @@
     justify-self: flex-start;
     order: -1;
     text-transform: uppercase;
-    font-weight: var(--pill__font-weight);
-    letter-spacing: var(--pill__letter-spacing);
-    background-color: var(--pill__bg);
-    color: var(--pill__color);
-    padding: var(--pill__padding);
-    border-radius: var(--pill__radius);
+    font-weight: var(--pill-font-weight);
+    letter-spacing: var(--pill-letter-spacing);
+    background-color: var(--pill-bg);
+    color: var(--pill-color);
+    padding: var(--pill-padding);
+    border-radius: var(--pill-radius);
   }
 
   /* Images */

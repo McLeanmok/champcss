@@ -20,6 +20,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* Varibles */
 :root {
+
   /* =====
   COLOURS
   ===== */
@@ -243,7 +244,7 @@
   --ls-xl: 0.5rem;
 
   /* Line heights */
-  --lh-body: clamp(1.3rem, 0.956vw + 0.694rem, 2rem);
+  --lh-body: clamp(1.8rem, 0.956vw + 0.694rem, 0.5rem);
   --lh-headinsgs: clamp(2rem, 1.912vw + 1.388rem, 4rem);
 
   /* Fonts */
